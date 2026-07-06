@@ -19,12 +19,8 @@ fi
 section "Updating Homebrew"
 brew update
 
-section "Homebrew setup"
-brew tap domt4/autoupdate
-brew trust --command domt4/autoupdate/autoupdate
-brew autoupdate start 12h --upgrade --cleanup
-
 section "System utilities"
+brew install mas
 brew install --cask raycast
 brew install --cask rectangle
 brew install --cask scroll-reverser
@@ -48,7 +44,6 @@ brew install --cask windows-app
 section "CLI and development tools"
 brew install git
 brew install gh
-brew install jq
 brew install wget
 brew install tree
 brew install php

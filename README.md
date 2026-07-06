@@ -58,6 +58,7 @@ The installation field shows the preferred restore path. If it contains a `brew`
 
 | Software | Description | Installation | Cost/license |
 | --- | --- | --- | --- |
+| [MAS CLI](https://github.com/mas-cli/mas) | Command-line interface for the Mac App Store. | `brew install mas` | Free, open source |
 | [Raycast](https://raycast.com/) | Launcher, commands, snippets, and automation. | `brew install --cask raycast` | Free plan, paid Pro plan available |
 | [Rectangle](https://rectangleapp.com/) | Window management with keyboard shortcuts and snap areas. | `brew install --cask rectangle` | Free, open source |
 | [Scroll Reverser](https://pilotmoon.com/scrollreverser/) | Separate scroll direction for mouse and trackpad. | `brew install --cask scroll-reverser` | Free |
