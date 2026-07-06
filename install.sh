@@ -5,15 +5,33 @@ section() {
   printf '\n==> %s\n' "$1"
 }
 
-if ! command -v brew >/dev/null 2>&1; then
-  section "Installing Homebrew"
-  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
+setup_homebrew_path() {
   if [[ -x /opt/homebrew/bin/brew ]]; then
     eval "$(/opt/homebrew/bin/brew shellenv)"
   elif [[ -x /usr/local/bin/brew ]]; then
     eval "$(/usr/local/bin/brew shellenv)"
   fi
+}
+
+if ! xcode-select -p >/dev/null 2>&1; then
+  section "Installing Command Line Tools for Xcode"
+  xcode-select --install || true
+  echo "Install Command Line Tools, then run this script again."
+  exit 1
+fi
+
+setup_homebrew_path
+
+if ! command -v brew >/dev/null 2>&1; then
+  section "Installing Homebrew"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  setup_homebrew_path
+fi
+
+if ! command -v brew >/dev/null 2>&1; then
+  echo "Homebrew is installed, but brew is not available in PATH."
+  echo "Close Terminal, open it again, and run this script again."
+  exit 1
 fi
 
 section "Updating Homebrew"
