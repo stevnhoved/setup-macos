@@ -78,7 +78,7 @@ The installation field shows the preferred restore path. If it contains a `brew`
 
 | Software | Description | Installation | Cost/license |
 | --- | --- | --- | --- |
-| [Microsoft 365 Personal](https://www.microsoft.com/en-us/microsoft-365/mac/microsoft-365-for-mac/) | Office suite including Word, Excel, PowerPoint, Outlook, OneNote, and OneDrive. | `brew install --cask microsoft-office` | Requires Microsoft 365 Family login/license |
+| [Microsoft 365 Family](https://www.microsoft.com/en-us/microsoft-365/buy/compare-all-microsoft-365-products) | Office suite including Word, Excel, PowerPoint, Outlook, OneNote, and OneDrive. | `brew install --cask microsoft-office` | Requires Microsoft 365 Family login/license |
 | [Microsoft Edge](https://www.microsoft.com/en-us/edge) | Secondary browser and Microsoft 365 compatibility. | `brew install --cask microsoft-edge` | Free |
 | [Microsoft Teams](https://www.microsoft.com/en/microsoft-teams/group-chat-software/) | Chat, meetings, calls, and collaboration. | `brew install --cask microsoft-teams` | Free/work account, depends on organization |
 | [Microsoft 365 Copilot](https://www.microsoft.com/en-us/microsoft-365-copilot/download-copilot-app) | Microsoft 365 hub for Copilot Chat, Microsoft 365 apps, and files. | `brew install --cask microsoft-365-copilot` | Works with Microsoft 365 Family login/license |
@@ -90,14 +90,12 @@ The installation field shows the preferred restore path. If it contains a `brew`
 | --- | --- | --- | --- |
 | [Git](https://git-scm.com) | Version control and the foundation for GitHub workflows. | `brew install git` | Free, open source |
 | [GitHub CLI](https://cli.github.com/) | GitHub from the terminal: login, issues, PRs, and repository commands. | `brew install gh` | Free |
-| [jq](https://jqlang.github.io/jq/) | Reads and transforms JSON in the terminal. | `brew install jq` | Free, open source |
 | [wget](https://www.gnu.org/software/wget/) | Downloads files from the terminal. | `brew install wget` | Free, open source |
 | [tree](https://oldmanprogrammer.net/source.php?dir=projects/tree) | Displays folder structures as trees in the terminal. | `brew install tree` | Free, open source |
 | [PHP](https://www.php.net/) | Runtime for PHP projects and local web tooling. | `brew install php` | Free, open source |
 | [PowerShell](https://github.com/PowerShell/PowerShell) | Microsoft's cross-platform shell and scripting environment. | `brew install powershell` | Free, open source |
 | [Visual Studio Code](https://code.visualstudio.com/) | Primary code editor with terminal integration. | `brew install --cask visual-studio-code` | Free |
 | [GitHub Desktop](https://desktop.github.com/) | GUI for GitHub repositories and commits. | `brew install --cask github` | Free |
-| [Codex](https://openai.com/codex) | OpenAI Codex desktop app for coding agents. | `brew install --cask codex-app` | Requires OpenAI access |
 | [CotEditor](https://coteditor.com/) | Lightweight text editor for quick files and notes. | `brew install --cask coteditor` | Free, open source |
 | [Local](https://localwp.com/) | Local WordPress development environment by Flywheel. | `brew install --cask local` | Free |
 
@@ -106,6 +104,7 @@ The installation field shows the preferred restore path. If it contains a `brew`
 | Software | Description | Installation | Cost/license |
 | --- | --- | --- | --- |
 | [ChatGPT](https://chatgpt.com/) | OpenAI's official desktop app. | `brew install --cask chatgpt` | Free plan, paid plans available |
+| [Codex](https://openai.com/codex) | OpenAI Codex desktop app for coding agents. | `brew install --cask codex-app` | Requires OpenAI access |
 
 ### 7. Files, Archives, and Transfer
 
@@ -128,7 +127,7 @@ The installation field shows the preferred restore path. If it contains a `brew`
 | Software | Description | Installation | Cost/license |
 | --- | --- | --- | --- |
 | [ES-DE](https://www.es-de.org/) | Frontend for browsing and launching games from multiple platforms. | `brew install --cask es-de` | Free, open source on macOS |
-| [RetroArch Metal](https://www.retroarch.com/) | Emulator frontend optimized for Metal on macOS. | `brew install --cask retroarch-metal` | Free, open source |
+| [RetroArch](https://www.retroarch.com/) | Emulator frontend optimized for Metal on macOS. | `brew install --cask retroarch-metal` | Free, open source |
 
 ## Maintaining with Updatest
 
@@ -138,7 +137,7 @@ Good routine after installing new apps:
 
 1. Open Updatest and check the source for new apps.
 2. If the app exists as a Homebrew cask, add it to `install.sh` and the README table.
-3. If the app only exists as a direct download, App Store install, or account-managed install, document that explicitly in the README.
+3. If the app only exists as a direct download, App Store install, or account-managed install, document that explicitly in this README.
 
 ## Useful macOS Notes
 
