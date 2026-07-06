@@ -64,7 +64,7 @@ The installation field shows the preferred restore path. If it contains a `brew`
 | [Stats](https://github.com/exelban/stats) | CPU, RAM, network, and sensor monitoring in the menu bar. | `brew install --cask stats` | Free, open source |
 | [macshot](https://github.com/sw33tLie/macshot) | Screenshot and screen recording tool. | `brew install --cask macshot` | Free, open source |
 | [AppCleaner](https://freemacsoft.net/appcleaner/) | Uninstalls apps and related support files. | `brew install --cask appcleaner` | Free |
-| [Updatest](https://updatest.app/) | Overview of app updates and update sources. | `brew install --cask updatest` | $12.99 one-time individual license |
+| [Updatest](https://updatest.app/) | Overview of app updates and update sources. | `brew install --cask updatest` | One-time individual or family license |
 | [fonttools](https://github.com/fonttools/fonttools) | Tools for inspecting and manipulating font files. | `brew install fonttools` | Free, open source |
 
 ### 3. Drivers and Hardware
