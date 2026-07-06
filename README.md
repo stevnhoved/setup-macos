@@ -75,7 +75,6 @@ The installation field shows the preferred restore path. If it contains a `brew`
 | [Microsoft 365 Family](https://www.microsoft.com/en-us/microsoft-365/buy/compare-all-microsoft-365-products) | Office suite including Word, Excel, PowerPoint, Outlook, OneNote, and OneDrive. | `brew install --cask microsoft-office` | Requires Microsoft 365 Family login/license |
 | [Microsoft Edge](https://www.microsoft.com/en-us/edge) | Secondary browser and Microsoft 365 compatibility. | `brew install --cask microsoft-edge` | Free |
 | [Microsoft Teams](https://www.microsoft.com/en/microsoft-teams/group-chat-software/) | Chat, meetings, calls, and collaboration. | `brew install --cask microsoft-teams` | Free/work account, depends on organization |
-| [Microsoft 365 Copilot](https://www.microsoft.com/en-us/microsoft-365-copilot/download-copilot-app) | Microsoft 365 hub for Copilot Chat, Microsoft 365 apps, and files. | `brew install --cask microsoft-365-copilot` | Works with Microsoft 365 Family login/license |
 | [Windows App](https://aka.ms/WindowsApp) | Remote access to Windows, Azure Virtual Desktop, and similar services. | `brew install --cask windows-app` | Free app, usually requires a Microsoft/work account |
 
 ### 4. CLI and Development
@@ -97,6 +96,7 @@ The installation field shows the preferred restore path. If it contains a `brew`
 
 | Software | Description | Installation | Cost/license |
 | --- | --- | --- | --- |
+| [Microsoft 365 Copilot](https://www.microsoft.com/en-us/microsoft-365-copilot/download-copilot-app) | Microsoft 365 hub for Copilot Chat, Microsoft 365 apps, and files. | `brew install --cask microsoft-365-copilot` | Works with Microsoft 365 Family login/license |
 | [ChatGPT](https://chatgpt.com/) | OpenAI's official desktop app. | `brew install --cask chatgpt` | Free plan, paid plans available |
 | [Codex](https://openai.com/codex) | OpenAI Codex desktop app for coding agents. | `brew install --cask codex-app` | Requires OpenAI access |
 

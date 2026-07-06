@@ -37,7 +37,6 @@ section "Microsoft foundation"
 brew install --cask microsoft-office
 brew install --cask microsoft-edge
 brew install --cask microsoft-teams
-brew install --cask microsoft-365-copilot
 brew install --cask windows-app
 
 section "CLI and development tools"
@@ -53,6 +52,7 @@ brew install --cask coteditor
 brew install --cask local
 
 section "Productivity and AI"
+brew install --cask microsoft-365-copilot
 brew install --cask chatgpt
 brew install --cask codex-app
 
