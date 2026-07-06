@@ -24,7 +24,6 @@ brew install mas
 brew install --cask raycast
 brew install --cask rectangle
 brew install --cask scroll-reverser
-brew install --cask stats
 brew install --cask macshot
 brew install --cask appcleaner
 brew install --cask updatest

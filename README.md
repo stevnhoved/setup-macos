@@ -56,7 +56,6 @@ The installation field shows the preferred restore path. If it contains a `brew`
 | [Raycast](https://raycast.com/) | Launcher, commands, snippets, and automation. | `brew install --cask raycast` | Free plan, paid Pro plan available |
 | [Rectangle](https://rectangleapp.com/) | Window management with keyboard shortcuts and snap areas. | `brew install --cask rectangle` | Free, open source |
 | [Scroll Reverser](https://pilotmoon.com/scrollreverser/) | Separate scroll direction for mouse and trackpad. | `brew install --cask scroll-reverser` | Free |
-| [Stats](https://github.com/exelban/stats) | CPU, RAM, network, and sensor monitoring in the menu bar. | `brew install --cask stats` | Free, open source |
 | [macshot](https://github.com/sw33tLie/macshot) | Screenshot and screen recording tool. | `brew install --cask macshot` | Free, open source |
 | [AppCleaner](https://freemacsoft.net/appcleaner/) | Uninstalls apps and related support files. | `brew install --cask appcleaner` | Free |
 | [Updatest](https://updatest.app/) | Overview of app updates and update sources. | `brew install --cask updatest` | One-time individual or family license |
