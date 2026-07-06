@@ -55,12 +55,12 @@ brew install php
 brew install powershell
 brew install --cask visual-studio-code
 brew install --cask github
-brew install --cask codex-app
 brew install --cask coteditor
 brew install --cask local
 
 section "Productivity and AI"
 brew install --cask chatgpt
+brew install --cask codex-app
 
 section "Files, archives, and transfer"
 brew install --cask marta
