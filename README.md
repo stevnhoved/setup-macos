@@ -1,4 +1,4 @@
-# setup-macos
+# My Recommended macOS Setup
 
 Recommended macOS setup for rebuilding my MacBook after a reinstall or replacement. It is designed to be reproducible, easy to audit, and useful as a reference for anyone moving into the Mac ecosystem.
 
