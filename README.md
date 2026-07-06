@@ -48,13 +48,7 @@ Cost notes are rough categories, not a guarantee of the current price. Always ch
 
 The installation field shows the preferred restore path. If it contains a `brew` command, the app is included in `install.sh`. If it says manual, direct, or App Store, it should be handled outside the script.
 
-### 1. Homebrew Setup and Maintenance
-
-| Software | Description | Installation | Cost/license |
-| --- | --- | --- | --- |
-| [Homebrew Autoupdate](https://github.com/DomT4/homebrew-autoupdate) | Keeps Homebrew updated automatically in the background using launchd. | `brew tap domt4/autoupdate`<br>`brew trust --command domt4/autoupdate/autoupdate`<br>`brew autoupdate start 12h --upgrade --cleanup` | Free, open source |
-
-### 2. System Utilities
+### 1. System Utilities
 
 | Software | Description | Installation | Cost/license |
 | --- | --- | --- | --- |
@@ -68,14 +62,14 @@ The installation field shows the preferred restore path. If it contains a `brew`
 | [Updatest](https://updatest.app/) | Overview of app updates and update sources. | `brew install --cask updatest` | One-time individual or family license |
 | [fonttools](https://github.com/fonttools/fonttools) | Tools for inspecting and manipulating font files. | `brew install fonttools` | Free, open source |
 
-### 3. Drivers and Hardware
+### 2. Drivers and Hardware
 
 | Software | Description | Installation | Cost/license |
 | --- | --- | --- | --- |
 | [Logitech Options+](https://www.logitech.com/en-us/software/logi-options-plus.html) | Configuration for Logitech mice and keyboards. | `brew install --cask logi-options+` | Free |
 | [Jabra Direct](https://www.jabra.com/software-and-services/jabra-direct) | Configuration, firmware updates, and personalization for Jabra headsets. | `brew install --cask jabra-direct` | Free |
 
-### 4. Microsoft Foundation
+### 3. Microsoft Foundation
 
 | Software | Description | Installation | Cost/license |
 | --- | --- | --- | --- |
@@ -85,7 +79,7 @@ The installation field shows the preferred restore path. If it contains a `brew`
 | [Microsoft 365 Copilot](https://www.microsoft.com/en-us/microsoft-365-copilot/download-copilot-app) | Microsoft 365 hub for Copilot Chat, Microsoft 365 apps, and files. | `brew install --cask microsoft-365-copilot` | Works with Microsoft 365 Family login/license |
 | [Windows App](https://aka.ms/WindowsApp) | Remote access to Windows, Azure Virtual Desktop, and similar services. | `brew install --cask windows-app` | Free app, usually requires a Microsoft/work account |
 
-### 5. CLI and Development
+### 4. CLI and Development
 
 | Software | Description | Installation | Cost/license |
 | --- | --- | --- | --- |
@@ -100,14 +94,14 @@ The installation field shows the preferred restore path. If it contains a `brew`
 | [CotEditor](https://coteditor.com/) | Lightweight text editor for quick files and notes. | `brew install --cask coteditor` | Free, open source |
 | [Local](https://localwp.com/) | Local WordPress development environment by Flywheel. | `brew install --cask local` | Free |
 
-### 6. Productivity and AI
+### 5. Productivity and AI
 
 | Software | Description | Installation | Cost/license |
 | --- | --- | --- | --- |
 | [ChatGPT](https://chatgpt.com/) | OpenAI's official desktop app. | `brew install --cask chatgpt` | Free plan, paid plans available |
 | [Codex](https://openai.com/codex) | OpenAI Codex desktop app for coding agents. | `brew install --cask codex-app` | Requires OpenAI access |
 
-### 7. Files, Archives, and Transfer
+### 6. Files, Archives, and Transfer
 
 | Software | Description | Installation | Cost/license |
 | --- | --- | --- | --- |
@@ -115,7 +109,7 @@ The installation field shows the preferred restore path. If it contains a `brew`
 | [MacZip](https://ezip.awehunt.com/) | Archive utility for zip and other compressed files. | `brew install --cask maczip` | Free |
 | [Cyberduck](https://cyberduck.io/) | FTP/SFTP/WebDAV/cloud storage browser. | `brew install --cask cyberduck` | Free, donation/license available |
 
-### 8. Media and Graphics
+### 7. Media and Graphics
 
 | Software | Description | Installation | Cost/license |
 | --- | --- | --- | --- |
@@ -123,7 +117,7 @@ The installation field shows the preferred restore path. If it contains a `brew`
 | [Affinity](https://www.affinity.studio/) | Image editing and design tools from Affinity. | `brew install --cask affinity` | Free; Canva AI features require Canva Pro |
 | [Pinta](https://www.pinta-project.com/) | Simple drawing and image editing app. | `brew install --cask pinta` | Free, open source |
 
-### 9. Retro Games
+### 8. Retro Games
 
 | Software | Description | Installation | Cost/license |
 | --- | --- | --- | --- |
