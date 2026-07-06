@@ -1,6 +1,6 @@
 # setup-macos
 
-Recommended macOS setup for rebuilding a MacBook after a reinstall or replacement. It is designed to be reproducible, easy to audit, and useful as a reference for anyone moving into the Mac ecosystem.
+Recommended macOS setup for rebuilding my MacBook after a reinstall or replacement. It is designed to be reproducible, easy to audit, and useful as a reference for anyone moving into the Mac ecosystem.
 
 This guide aims to:
 
@@ -80,10 +80,10 @@ The installation field shows the preferred restore path. If it contains a `brew`
 
 | Software | Description | Installation | Cost/license |
 | --- | --- | --- | --- |
-| Microsoft 365 Personal | Office suite including Word, Excel, PowerPoint, Outlook, OneNote, and OneDrive. | `brew install --cask microsoft-office` | Requires Microsoft 365 Personal login/license |
+| Microsoft 365 Personal | Office suite including Word, Excel, PowerPoint, Outlook, OneNote, and OneDrive. | `brew install --cask microsoft-office` | Requires Microsoft 365 Family login/license |
 | Microsoft Edge | Secondary browser and Microsoft 365 compatibility. | `brew install --cask microsoft-edge` | Free |
 | Microsoft Teams | Chat, meetings, calls, and collaboration. | `brew install --cask microsoft-teams` | Free/work account, depends on organization |
-| Microsoft 365 Copilot | Microsoft 365 hub for Copilot Chat, Microsoft 365 apps, and files. | `brew install --cask microsoft-365-copilot` | Works with Microsoft 365 Personal login/license |
+| Microsoft 365 Copilot | Microsoft 365 hub for Copilot Chat, Microsoft 365 apps, and files. | `brew install --cask microsoft-365-copilot` | Works with Microsoft 365 Family login/license |
 | Windows App | Remote access to Windows, Azure Virtual Desktop, and similar services. | `brew install --cask windows-app` | Free app, usually requires a Microsoft/work account |
 
 ### 5. CLI and Development
