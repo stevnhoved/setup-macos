@@ -1,12 +1,12 @@
 # My Recommended macOS Setup
 
-Recommended macOS setup for rebuilding my MacBook after a reinstall or replacement. It is designed to be reproducible, easy to audit, and useful as a reference for anyone moving into the Mac ecosystem.
+Recommended macOS app setup for rebuilding my MacBook after a reinstall or replacement. It is designed to be repeatable, easy to audit, and useful as a reference for anyone moving into the Mac ecosystem.
 
 This guide aims to:
 
 - keep an installable list of recommended apps and tools
 - document why each app is useful
-- separate automated Homebrew installs from manual, App Store, and account-driven setup
+- track the current macOS release supported by the reference Mac
 
 ## Reference Mac
 
@@ -20,6 +20,8 @@ This guide aims to:
 | Memory | 16 GB |
 | Architecture | Apple Silicon / arm64 |
 
+This is the project's target hardware. The installer may work on other Macs, but they are not tested or supported. Software support follows the latest generally available macOS release supported by this Mac rather than a fixed macOS version.
+
 ## Installation
 
 Run the script from the repository root:
@@ -28,25 +30,15 @@ Run the script from the repository root:
 ./install.sh
 ```
 
-The script installs Homebrew if it is missing, updates Homebrew, and then installs the packages and apps that can be managed through Homebrew. Apps from the App Store, direct downloads, or work account/MDM flows still need to be installed or activated manually.
+The script installs Homebrew if it is missing, updates Homebrew, and then installs the declared apps and command-line tools. macOS settings, app configuration, accounts, and device management are outside the scope of this project.
 
-Install order:
-
-1. Homebrew setup and maintenance
-2. System utilities
-3. Drivers and hardware
-4. Microsoft foundation
-5. CLI and development tools
-6. Productivity and AI
-7. Files, archives, and transfer
-8. Media and graphics
-9. Retro games
+If an item fails, successful installations are kept. The script reports the failure and exits with an error; resolve the reported problem and run `./install.sh` again to retry the missing items.
 
 ## Software
 
 Cost notes are rough categories, not a guarantee of the current price. Always check the vendor site, especially for subscriptions, Pro plans, and one-time purchases.
 
-The installation field shows the preferred restore path. If it contains a `brew` command, the app is included in `install.sh`. If it says manual, direct, or App Store, it should be handled outside the script.
+The installation field shows the Homebrew command used in `install.sh`, which is the source of truth for the package list.
 
 ### 1. System Utilities
 
@@ -98,7 +90,7 @@ The installation field shows the preferred restore path. If it contains a `brew`
 | --- | --- | --- | --- |
 | [Microsoft 365 Copilot](https://www.microsoft.com/en-us/microsoft-365-copilot/download-copilot-app) | Microsoft 365 hub for Copilot Chat, Microsoft 365 apps, and files. | `brew install --cask microsoft-365-copilot` | Works with Microsoft 365 Family login/license |
 | [ChatGPT](https://chatgpt.com/) | OpenAI's official desktop app. | `brew install --cask chatgpt` | Free plan, paid plans available |
-| [Codex](https://openai.com/codex) | OpenAI Codex desktop app for coding agents. | `brew install --cask codex-app` | Requires OpenAI access |
+| [Codex](https://openai.com/codex) | OpenAI Codex CLI app for coding agents. | `brew install --cask codex` | Requires OpenAI access |
 
 ### 6. Files, Archives, and Transfer
 
@@ -130,8 +122,7 @@ Updatest is installed through Homebrew and is useful as a maintenance dashboard 
 Good routine after installing new apps:
 
 1. Open Updatest and check the source for new apps.
-2. If the app exists as a Homebrew cask, add it to `install.sh` and the README table.
-3. If the app only exists as a direct download, App Store install, or account-managed install, document that explicitly in this README.
+2. If the app exists in Homebrew, add it to `install.sh` and the README table.
 
 ## Useful macOS Notes
 
@@ -140,4 +131,4 @@ Good routine after installing new apps:
 - Terminal packages are installed with `brew install ...`.
 - Apps may need extra macOS permissions after installation, especially accessibility, screen recording, input monitoring, and login items.
 - `brew leaves` shows the directly installed formula packages and is useful for avoiding documentation of every underlying dependency.
-- Updatest can be used as an ongoing sanity check for which apps are Brew-managed, directly installed, or manually handled.
+- Updatest can be used as an ongoing sanity check for which apps are managed by Homebrew.
