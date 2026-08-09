@@ -1,6 +1,6 @@
 # My Recommended macOS Setup
 
-Recommended macOS app setup for rebuilding my MacBook after a reinstall or replacement. It is designed to be repeatable, easy to audit, and useful as a reference for anyone moving into the Mac ecosystem.
+An opinionated collection of recommended macOS apps and tools. I use it as a repeatable recovery setup when rebuilding my Mac, while also maintaining it as inspiration for anyone exploring or improving their own macOS setup.
 
 This guide aims to:
 
@@ -19,10 +19,14 @@ This guide aims to:
 | GPU | 16 cores |
 | Memory | 16 GB |
 | Architecture | Apple Silicon / arm64 |
+| macOS | macOS 26.6 |
 
-This is the project's target hardware. The installer may work on other Macs, but they are not tested or supported. Software support follows the latest generally available macOS release supported by this Mac rather than a fixed macOS version.
+This is the project's target hardware and current macOS version. The installer may work on other Macs, but they are not tested or supported. Software support advances with the latest generally available macOS release supported by this Mac.
 
 ## Installation
+
+> [!WARNING]
+> `./install.sh` installs the entire software list below and may request an administrator password. Review the script and the list before running it.
 
 Run the script from the repository root:
 
@@ -31,6 +35,8 @@ Run the script from the repository root:
 ```
 
 The script installs Homebrew if it is missing, updates Homebrew, and then installs the declared apps and command-line tools. macOS settings, app configuration, accounts, and device management are outside the scope of this project.
+
+It is safe to rerun the script. Homebrew recognizes formulae and casks that are already installed, so they are not installed again.
 
 If an item fails, successful installations are kept. The script reports the failure and exits with an error; resolve the reported problem and run `./install.sh` again to retry the missing items.
 
@@ -44,7 +50,7 @@ The installation field shows the Homebrew command used in `install.sh`, which is
 
 | Software | Description | Installation | Cost/license |
 | --- | --- | --- | --- |
-| [MAS CLI](https://github.com/mas-cli/mas) | Command-line interface for the Mac App Store. | `brew install mas` | Free, open source |
+| [MAS CLI](https://github.com/mas-cli/mas) | Command-line interface included so Updatest can check Mac App Store updates; this script does not install any App Store apps. | `brew install mas` | Free, open source |
 | [Raycast](https://raycast.com/) | Launcher, commands, snippets, and automation. | `brew install --cask raycast` | Free plan, paid Pro plan available |
 | [Rectangle](https://rectangleapp.com/) | Window management with keyboard shortcuts and snap areas. | `brew install --cask rectangle` | Free, open source |
 | [Scroll Reverser](https://pilotmoon.com/scrollreverser/) | Separate scroll direction for mouse and trackpad. | `brew install --cask scroll-reverser` | Free |
@@ -117,7 +123,7 @@ The installation field shows the Homebrew command used in `install.sh`, which is
 
 ## Maintaining with Updatest
 
-Updatest is installed through Homebrew and is useful as a maintenance dashboard after the initial setup. Enable update sources and Brew adoption so it can help spot apps that should move from manual installation into Homebrew in the future.
+Updatest is installed through Homebrew and is useful as a maintenance dashboard after the initial setup. MAS CLI is included for Updatest to use when checking the Mac App Store, even though `install.sh` does not install any Mac App Store apps. Enable update sources and Brew adoption so Updatest can also help spot apps that should move from manual installation into Homebrew in the future.
 
 Good routine after installing new apps:
 
