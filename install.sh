@@ -54,6 +54,7 @@ set +e
 
 section "System utilities"
 brew install mas
+mas get com.ookla.speedtest-macos
 brew install --cask raycast
 brew install --cask rectangle
 brew install --cask scroll-reverser

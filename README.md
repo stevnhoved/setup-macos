@@ -34,9 +34,9 @@ Run the script from the repository root:
 ./install.sh
 ```
 
-The script installs Homebrew if it is missing, updates Homebrew, and then installs the declared apps and command-line tools. macOS settings, app configuration, accounts, and device management are outside the scope of this project.
+The script installs Homebrew if it is missing, updates Homebrew, and then installs the declared apps and command-line tools. Installing Speedtest requires being signed in to the Mac App Store. macOS settings, app configuration, accounts, and device management are outside the scope of this project.
 
-It is safe to rerun the script. Homebrew recognizes formulae and casks that are already installed, so they are not installed again.
+It is safe to rerun the script. Homebrew and MAS recognize apps and packages that are already installed, so they are not installed again.
 
 If an item fails, successful installations are kept. The script reports the failure and exits with an error; resolve the reported problem and run `./install.sh` again to retry the missing items.
 
@@ -44,13 +44,14 @@ If an item fails, successful installations are kept. The script reports the fail
 
 Cost notes are rough categories, not a guarantee of the current price. Always check the vendor site, especially for subscriptions, Pro plans, and one-time purchases.
 
-The installation field shows the Homebrew command used in `install.sh`, which is the source of truth for the package list.
+The installation field shows the command used in `install.sh`, which is the source of truth for the package list.
 
 ### 1. System Utilities
 
 | Software | Description | Installation | Cost/license |
 | --- | --- | --- | --- |
-| [MAS CLI](https://github.com/mas-cli/mas) | Command-line interface included so Updatest can check Mac App Store updates; this script does not install any App Store apps. | `brew install mas` | Free, open source |
+| [MAS CLI](https://github.com/mas-cli/mas) | Command-line interface used to install Speedtest and let Updatest check Mac App Store updates. | `brew install mas` | Free, open source |
+| [Speedtest by Ookla](https://apps.apple.com/app/id1153157709) | Menu bar utility for testing ping, download speed, and upload speed. | `mas get com.ookla.speedtest-macos` | Free |
 | [Raycast](https://raycast.com/) | Launcher, commands, snippets, and automation. | `brew install --cask raycast` | Free plan, paid Pro plan available |
 | [Rectangle](https://rectangleapp.com/) | Window management with keyboard shortcuts and snap areas. | `brew install --cask rectangle` | Free, open source |
 | [Scroll Reverser](https://pilotmoon.com/scrollreverser/) | Separate scroll direction for mouse and trackpad. | `brew install --cask scroll-reverser` | Free |
@@ -123,7 +124,7 @@ The installation field shows the Homebrew command used in `install.sh`, which is
 
 ## Maintaining with Updatest
 
-Updatest is installed through Homebrew and is useful as a maintenance dashboard after the initial setup. MAS CLI is included for Updatest to use when checking the Mac App Store, even though `install.sh` does not install any Mac App Store apps. Enable update sources and Brew adoption so Updatest can also help spot apps that should move from manual installation into Homebrew in the future.
+Updatest is installed through Homebrew and is useful as a maintenance dashboard after the initial setup. MAS CLI installs Speedtest from the Mac App Store and lets Updatest check App Store updates. Enable update sources and Brew adoption so Updatest can also help spot apps that should move from manual installation into Homebrew in the future.
 
 Good routine after installing new apps:
 
